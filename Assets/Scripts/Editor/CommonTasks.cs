@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 using UnityEngine;
-
+ 
 namespace RunAndJump {
 
 	public class CommonTasks {
