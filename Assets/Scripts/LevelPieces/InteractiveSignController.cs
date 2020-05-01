@@ -15,9 +15,12 @@ namespace RunAndJump {
 		public static event StopInteractionDelegate StopInteractionEvent;
 
 		private void OnTriggerEnter2D(Collider2D col) {
-			if(StartInteractionEvent != null) {
+			Debug.Log("Sign entered");
+			if (StartInteractionEvent != null) {
+				Debug.Log("Signevent called");
 				AudioPlayer.Instance.PlaySfx (SignFx);
 				StartInteractionEvent(Message);
+
 			}
 		}
 

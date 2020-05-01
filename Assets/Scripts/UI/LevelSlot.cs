@@ -7,6 +7,7 @@ namespace RunAndJump {
 
 	[RequireComponent(typeof(Button))]
 	[RequireComponent(typeof(Image))]
+	[System.Serializable]
 	public class LevelSlot : MonoBehaviour {
 
 		public Sprite OnStateSprite;
