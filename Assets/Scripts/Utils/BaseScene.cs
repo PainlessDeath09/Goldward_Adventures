@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 namespace RunAndJump {
 
@@ -17,11 +18,11 @@ namespace RunAndJump {
 		}
 
 		protected void GoToScene(Scene scene) {
-			Application.LoadLevel (scene.ToString ());
+			SceneManager.LoadScene (scene.ToString ());
 		}
 
 		protected void GoToScene(string sceneName) {
-			Application.LoadLevel (sceneName);
+			SceneManager.LoadScene (sceneName);
 		}
 	}
 
