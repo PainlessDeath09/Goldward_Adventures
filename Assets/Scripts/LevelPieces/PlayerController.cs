@@ -43,7 +43,7 @@ namespace RunAndJump {
 			if(!_playerDied){
 				_playerDied = true;
 				if(PlayerDeathEvent != null) {
-					PlayerDeathEvent();
+					PlayerDeathEvent.Invoke();
 				}
 
 			}

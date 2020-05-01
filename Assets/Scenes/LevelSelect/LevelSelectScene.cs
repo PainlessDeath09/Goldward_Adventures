@@ -20,14 +20,15 @@ namespace RunAndJump {
 		}
 		
 		private void LevelSlotOnClick(int levelId) {
-			//Session.Instance.PlayLevel(levelId);
-			//GoToScene (Scene.LevelHandler);
+			Session.Instance.PlayLevel(levelId);
+			GoToScene (Scene.LevelHandler);
+			/*
 			if (levelId == 1)
 				SceneManager.LoadScene(sceneName: "Tutorial_level");
 			else if (levelId == 2)
 				SceneManager.LoadScene(sceneName: "Dejavu_level");
 			else
-				SceneManager.LoadScene(sceneName: "Leap_level");
+				SceneManager.LoadScene(sceneName: "Leap_level");*/
 		}
 	}
 	
