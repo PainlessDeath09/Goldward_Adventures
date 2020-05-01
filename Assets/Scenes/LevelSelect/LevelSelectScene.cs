@@ -1,9 +1,10 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 namespace RunAndJump {
-
+	[System.Serializable]
 	public class LevelSelectScene : BaseScene {
 		
 		public List<LevelSlot> LevelSlots;
@@ -17,10 +18,16 @@ namespace RunAndJump {
 				LevelSlots[i].Init((i < Session.Instance.GetTotalLevels()), i + 1, LevelSlotOnClick);
 			}
 		}
-
+		
 		private void LevelSlotOnClick(int levelId) {
-			Session.Instance.PlayLevel(levelId);
-			GoToScene (Scene.LevelHandler);
+			//Session.Instance.PlayLevel(levelId);
+			//GoToScene (Scene.LevelHandler);
+			if (levelId == 1)
+				SceneManager.LoadScene(sceneName: "Tutorial_level");
+			else if (levelId == 2)
+				SceneManager.LoadScene(sceneName: "Dejavu_level");
+			else
+				SceneManager.LoadScene(sceneName: "Leap_level");
 		}
 	}
 	
