@@ -24,7 +24,7 @@ namespace RunAndJump {
 	}
 
 	public class SingletonManager {
-			
+		
 		private static GameObject go = null;
 
 		public static GameObject Go {
