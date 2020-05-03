@@ -13,7 +13,7 @@ namespace RunAndJump {
 				return instance;
 			}
 		}
-		
+		 
 		public static void Instantiate () {
 			instance = Instance;
 		}
